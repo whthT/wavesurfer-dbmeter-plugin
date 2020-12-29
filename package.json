@@ -2,7 +2,7 @@
   "name": "wavesurfer-dbmeter-plugin",
   "version": "1.0.0",
   "description": "Desibel meter plugin for wavesurfer.js",
-  "main": "index.js",
+  "main": "dist/WaveSurferDBMeter.js",
   "repository": "git@github.com:whthT/wavesurfer-dbmeter-plugin.git",
   "author": "Musa Kurt <hackedtim61@gmail.com>",
   "license": "MIT",
