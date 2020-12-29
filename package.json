@@ -17,11 +17,5 @@
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-cli serve",
     "prod": "cross-env NODE_ENV=production webpack"
-  },
-  "dependencies": {
-    "decibel-meter": "^2.0.0",
-    "getusermedia": "^2.0.1",
-    "volume-meter": "^2.0.1",
-    "web-audio-peak-meter": "^1.0.0"
   }
 }

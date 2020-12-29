@@ -804,11 +804,6 @@ decamelize@^1.2.0:
   resolved "https://registry.yarnpkg.com/decamelize/-/decamelize-1.2.0.tgz#f6534d15148269b20352e7bee26f501f9a191290"
   integrity sha1-9lNNFRSCabIDUue+4m9QH5oZEpA=
 
-decibel-meter@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/decibel-meter/-/decibel-meter-2.0.0.tgz#7b1f11a7837562c514487f0d88f50e76c2893c8e"
-  integrity sha1-ex8Rp4N1YsUUSH8NiPUOdsKJPI4=
-
 decode-uri-component@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.0.tgz#eb3913333458775cb84cd1a1fae062106bb87545"
@@ -1393,13 +1388,6 @@ get-value@^2.0.3, get-value@^2.0.6:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/get-value/-/get-value-2.0.6.tgz#dc15ca1c672387ca76bd37ac0a395ba2042a2c28"
   integrity sha1-3BXKHGcjh8p2vTesCjlbogQqLCg=
-
-getusermedia@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/getusermedia/-/getusermedia-2.0.1.tgz#f81af9795bc5934649813f7d092dd65030b34655"
-  integrity sha1-+Br5eVvFk0ZJgT99CS3WUDCzRlU=
-  dependencies:
-    webrtc-adapter "^2.0.2"
 
 glob-parent@^3.1.0:
   version "3.1.0"
@@ -2507,11 +2495,6 @@ path-to-regexp@0.1.7:
   resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-0.1.7.tgz#df604178005f522f15eb4490e7247a1bfaa67f8c"
   integrity sha1-32BBeABfUi8V60SQ5yR6G/qmf4w=
 
-performance-now@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/performance-now/-/performance-now-2.1.0.tgz#6309f4e0e5fa913ec1c69307ae364b4b377c9e7b"
-  integrity sha1-Ywn04OX6kT7BxpMHrjZLSzd8nns=
-
 pify@^2.0.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/pify/-/pify-2.3.0.tgz#ed141a6ac043a849ea588498e7dca8b15330e90c"
@@ -2627,13 +2610,6 @@ querystringify@^2.1.1:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/querystringify/-/querystringify-2.2.0.tgz#3345941b4153cb9d082d8eee4cda2016a9aef7f6"
   integrity sha512-FIqgj2EUvTa7R50u0rGsyTftzjYmv/a3hO345bZNrqabNqjtgiDMgmo4mkUjd+nzU5oF3dClKqFIPUKybUyqoQ==
-
-raf@^3.1.0:
-  version "3.4.1"
-  resolved "https://registry.yarnpkg.com/raf/-/raf-3.4.1.tgz#0742e99a4a6552f445d73e3ee0328af0ff1ede39"
-  integrity sha512-Sq4CW4QhwOHE8ucn6J34MqtZCeWFP2aQSmrlroYgqAV1PjStIhJXxYuTgUIfkEk7zTLjmIjLmU5q+fbD1NnOJA==
-  dependencies:
-    performance-now "^2.1.0"
 
 randombytes@^2.1.0:
   version "2.1.0"
@@ -2850,11 +2826,6 @@ schema-utils@^3.0.0:
     "@types/json-schema" "^7.0.6"
     ajv "^6.12.5"
     ajv-keywords "^3.5.2"
-
-sdp@^1.0.0:
-  version "1.5.4"
-  resolved "https://registry.yarnpkg.com/sdp/-/sdp-1.5.4.tgz#8e038f6ddb14bd765ae1f4b5216e12094511e0d0"
-  integrity sha1-jgOPbdsUvXZa4fS1IW4SCUUR4NA=
 
 select-hose@^2.0.0:
   version "2.0.0"
@@ -3388,13 +3359,6 @@ vary@~1.1.2:
   resolved "https://registry.yarnpkg.com/vary/-/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"
   integrity sha1-IpnwLG3tMNSllhsLn3RSShj2NPw=
 
-volume-meter@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/volume-meter/-/volume-meter-2.0.1.tgz#807118b498ba12a773ae201dbe6fe4034527271c"
-  integrity sha1-gHEYtJi6EqdzriAdvm/kA0UnJxw=
-  dependencies:
-    raf "^3.1.0"
-
 watchpack@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/watchpack/-/watchpack-2.1.0.tgz#e63194736bf3aa22026f7b191cd57907b0f9f696"
@@ -3414,11 +3378,6 @@ wbuf@^1.1.0, wbuf@^1.7.3:
   integrity sha512-O84QOnr0icsbFGLS0O3bI5FswxzRr8/gHwWkDlQFskhSPryQXvrTMxjxGP4+iWYoauLoBvfDpkrOauZ+0iZpDA==
   dependencies:
     minimalistic-assert "^1.0.0"
-
-web-audio-peak-meter@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/web-audio-peak-meter/-/web-audio-peak-meter-1.0.0.tgz#cd988d6e73ea0523354085fba31b867d0f713523"
-  integrity sha1-zZiNbnPqBSM1QIX7oxuGfQ9xNSM=
 
 webpack-cli@^4.3.0:
   version "4.3.0"
@@ -3541,13 +3500,6 @@ webpack@^5.11.1:
     terser-webpack-plugin "^5.0.3"
     watchpack "^2.0.0"
     webpack-sources "^2.1.1"
-
-webrtc-adapter@^2.0.2:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/webrtc-adapter/-/webrtc-adapter-2.1.0.tgz#612b5bc6ce8e73c9d0660038a21f9255a867bf3e"
-  integrity sha1-YStbxs6Oc8nQZgA4oh+SVahnvz4=
-  dependencies:
-    sdp "^1.0.0"
 
 websocket-driver@>=0.5.1, websocket-driver@^0.7.4:
   version "0.7.4"

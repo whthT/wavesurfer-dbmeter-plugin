@@ -1,5 +1,3 @@
-import webAudioPeakMeter from "web-audio-peak-meter";
-
 export default class DBMeterPlugin {
   static create(params) {
     return {
