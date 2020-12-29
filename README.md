@@ -9,7 +9,12 @@ import DBMeterPlugin from "wavesurfer-dbmeter-plugin";
 const wavesurfer = WaveSurfer.create({
   container: document.getElementById("wavesurfer"),
   backend: "MediaElement", // All backends supported.
-  plugins: [DBMeterPlugin.create()],
+  ...
+  plugins: [
+      ...
+      DBMeterPlugin.create(),
+      ...
+  ],
 });
 
 wavesurfer.on("db-meter-update", (channelMaxes) => {
