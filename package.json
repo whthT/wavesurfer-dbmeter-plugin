@@ -1,0 +1,27 @@
+{
+  "name": "wavesurfer-dbmeter-plugin",
+  "version": "1.0.0",
+  "description": "Desibel meter plugin for wavesurfer.js",
+  "main": "index.js",
+  "repository": "git@github.com:whthT/wavesurfer-dbmeter-plugin.git",
+  "author": "Musa Kurt <hackedtim61@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "html-webpack-plugin": "^4.5.0",
+    "wavesurfer.js": "^4.3.0",
+    "webpack": "^5.11.1",
+    "webpack-cli": "^4.3.0",
+    "webpack-dev-server": "^3.11.1"
+  },
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack-cli serve",
+    "prod": "cross-env NODE_ENV=production webpack"
+  },
+  "dependencies": {
+    "decibel-meter": "^2.0.0",
+    "getusermedia": "^2.0.1",
+    "volume-meter": "^2.0.1",
+    "web-audio-peak-meter": "^1.0.0"
+  }
+}
