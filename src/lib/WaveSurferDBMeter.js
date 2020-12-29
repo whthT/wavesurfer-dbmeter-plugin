@@ -39,8 +39,15 @@ export default class DBMeterPlugin {
     this.wavesurfer.fireEvent("db-meter-update", channelMaxes);
   }
 
+  createMeterNode(sourceNode, audioCtx) {
+    var c = sourceNode.channelCount;
+    var meterNode = audioCtx.createScriptProcessor(2048, c, c);
+    sourceNode.connect(meterNode);
+    meterNode.connect(audioCtx.destination);
+    return meterNode;
+  }
+
   _onReady() {
-    var myAudio = this.wavesurfer.backend.media;
     var audioCtx = this.wavesurfer.backend.ac;
 
     if (this.meterNode) {
@@ -48,18 +55,28 @@ export default class DBMeterPlugin {
       this.meterNode.disconnect(audioCtx.destination);
     }
 
-    if (this.sourceNode) {
+    if (
+      this.sourceNode &&
+      this.wavesurfer.params.backend !== "MediaElementWebAudio"
+    ) {
       this.sourceNode.disconnect(audioCtx.destination);
       this.sourceNode = null;
     }
 
-    this.sourceNode = audioCtx.createMediaElementSource(myAudio);
-    this.sourceNode.connect(audioCtx.destination);
+    if (this.wavesurfer.params.backend === "MediaElement") {
+      var myAudio = this.wavesurfer.backend.media;
+      this.sourceNode = audioCtx.createMediaElementSource(myAudio);
+      this.sourceNode.connect(audioCtx.destination);
+    } else if (this.wavesurfer.params.backend === "MediaElementWebAudio") {
+      this.sourceNode = this.wavesurfer.backend.sourceMediaElement;
+    } else {
+      this.sourceNode = audioCtx.createBufferSource();
+      this.sourceNode.buffer = this.wavesurfer.backend.buffer;
+      this.sourceNode.connect(audioCtx.destination);
+      this.sourceNode.start();
+    }
 
-    this.meterNode = webAudioPeakMeter.createMeterNode(
-      this.sourceNode,
-      audioCtx
-    );
+    this.meterNode = this.createMeterNode(this.sourceNode, audioCtx);
 
     this.meterNode.onaudioprocess = this._handleMeterProcess.bind(this);
 

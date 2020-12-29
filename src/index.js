@@ -8,14 +8,14 @@ window.addEventListener("DOMContentLoaded", () => {
     splitChannels: true,
     plugins: [DBMeterPlugin.create()],
   });
-  window.wavesurfer.load("/bllt_impact_01.wav");
+  window.wavesurfer.load("/4_channel_test.wav");
 
   document.getElementById("playPause").onclick = () => {
     window.wavesurfer.playPause();
   };
 
   window.wavesurfer.on("db-meter-update", (channelMaxes) => {
-    console.log(channelMaxes);
+    console.log(channelMaxes); // [0.1297202706336975, 0.1289086937904358]
   });
 
   Array.from(document.querySelectorAll(".links > a")).forEach((el) => {
@@ -25,6 +25,4 @@ window.addEventListener("DOMContentLoaded", () => {
       wavesurfer.load(el.getAttribute("href"));
     };
   });
-
-  console.log(window.wavesurfer);
 });
