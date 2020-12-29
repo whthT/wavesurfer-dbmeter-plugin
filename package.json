@@ -1,6 +1,6 @@
 {
   "name": "wavesurfer-dbmeter-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Desibel meter plugin for wavesurfer.js",
   "main": "dist/WaveSurferDBMeter.js",
   "repository": "git@github.com:whthT/wavesurfer-dbmeter-plugin.git",
