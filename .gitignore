@@ -102,7 +102,6 @@ dist
 
 # TernJS port file
 .tern-port
-public/*.wav
-dist/index.html
+public/*
 dist/main.js
 dist/*.LICENSE.txt
