@@ -4,7 +4,7 @@ import DBMeterPlugin from "./lib/WaveSurferDBMeter";
 window.addEventListener("DOMContentLoaded", () => {
   const wavesurfer = WaveSurfer.create({
     container: document.getElementById("wavesurfer"),
-    backend: "MediaElement",
+    backend: "MediaElementWebAudio",
     splitChannels: true,
     plugins: [DBMeterPlugin.create()],
   });
